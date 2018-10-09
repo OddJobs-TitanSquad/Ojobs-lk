@@ -1,0 +1,26 @@
+<div class="col-md-6">
+  <h2> User Details</h2>
+  
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th >Id</th>
+      <th>SeekerId</th>
+      <th>ProviderId</th>
+      <th>Job</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+    <tbody>
+    <tr *ngFor="let job of jobs">
+      
+      <td>{{job.id}}</td>
+      <td>{{job.sid}}</td>
+      <td>{{job.pid}}</td>
+      <td>{{job.job}}</td>
+      <td>{{job.date}}</td>
+      <td><a routerLink="/complain"><button class="btn btn-danger" (click)="complain()">Complain</button></a></td> 
+    </tr>
+    </tbody>
+  </table>
+  </div>
