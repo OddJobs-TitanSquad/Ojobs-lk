@@ -15,6 +15,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { PostJobComponent } from './post-job/post-job.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 const appRoutes:Routes=[
@@ -52,7 +53,8 @@ const appRoutes:Routes=[
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes),
-    MatFormFieldModule
+    MatFormFieldModule,
+    BrowserAnimationsModule
   ],
   providers: [UserService,JobService],
   bootstrap: [AppComponent]
